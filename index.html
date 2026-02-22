@@ -1,0 +1,392 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Shahd Hamada | Flutter Developer</title>
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+
+<style>
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+
+*{
+    font-family:'Poppins',sans-serif;
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    scroll-behavior:smooth;
+}
+
+body{
+    background:#0d0d0d;
+    color:#fff;
+}
+
+header{
+    background:#0d0d0d;
+    width:100%;
+    position:fixed;
+    z-index:999;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    padding:10px 200px;
+}
+
+.logo{
+    text-decoration:none;
+    color:#fff;
+    font-weight:700;
+    font-size:1.8em;
+}
+
+.navigation a{
+    color:#800020; /* برغندي */
+    text-decoration:none;
+    font-size:1.1em;
+    padding-left:30px;
+}
+
+.navigation a:hover{
+    color:#b30040;
+}
+
+section{
+    padding:100px 200px;
+}
+
+/* HERO */
+.main{
+    width:100%;
+    min-height:100vh;
+    display:flex;
+    align-items:center;
+    background:#111;
+}
+
+.main-content{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    width:100%;
+}
+
+.main h2{
+    font-size:1.5em;
+}
+
+.main h2 span{
+    display:inline-block;
+    margin-top:10px;
+    color:#800020; /* برغندي */
+    font-size:2.8em;
+    font-weight:600;
+}
+
+.main h3{
+    margin:20px 0;
+    font-size:1.8em;
+}
+
+.main-btn{
+    color:#fff;
+    background:#800020;
+    text-decoration:none;
+    padding:12px 25px;
+    border-radius:10px;
+    transition:0.3s;
+}
+
+.main-btn:hover{
+    background:#b30040;
+    transform:scale(1.05);
+}
+
+.main-content img{
+    width:300px;
+    border-radius:50%;
+    border:4px solid #800020;
+}
+
+/* ABOUT ME */
+.about-me{
+    text-align:center;
+    margin-bottom:30px;
+}
+
+.about-me p{
+    max-width:800px;
+    margin: 0 auto 20px auto;
+    font-size:1.1em;
+    line-height:1.6;
+}
+
+/* TITLES */
+.title{
+    text-align:center;
+    color:#800020;
+    font-size:2em;
+    margin-bottom:40px;
+}
+
+/* CARDS */
+.content{
+    display:flex;
+    justify-content:center;
+    flex-wrap:wrap;
+}
+
+.card{
+    background:#1a1a1a;
+    width:22em;
+    padding:25px;
+    margin:15px;
+    border-radius:12px;
+    transition:0.4s;
+}
+
+.card:hover{
+    transform:translateY(-10px);
+}
+
+.card .icon{
+    color:#fff; /* أيقونات باللون الأبيض */
+    font-size:4em;
+    text-align:center;
+}
+
+.info{
+    text-align:center;
+}
+
+.info h3{
+    margin:10px 0;
+    color:#fff; /* الاسم باللون الأبيض */
+}
+
+.info a{
+    color:#fff; /* اللينك باللون الأبيض */
+    text-decoration: none;
+}
+
+.info a:hover{
+    color:#800020; /* hover برغندي */
+}
+
+/* PROJECTS */
+.projects{
+    background:#111;
+}
+
+.project-card{
+    background:#1a1a1a;
+    width:23em;
+    border-radius:10px;
+    margin:20px;
+    overflow:hidden;
+    transition:0.4s;
+}
+
+.project-card:hover{
+    transform:scale(1.05);
+}
+
+.project-image img{
+    width:100%;
+}
+
+.project-info{
+    padding:15px;
+}
+
+.project-title{
+    display:flex;
+    justify-content:space-between;
+    margin-top:10px;
+}
+
+.more-details{
+    text-decoration:none;
+    color:#800020;
+}
+
+.more-details:hover{
+    color:#b30040;
+}
+
+/* CONTACT */
+.contact .info h3{
+    color:#fff; /* الاسم باللون الأبيض */
+}
+
+.footer{
+    background:#000;
+    padding:20px;
+    text-align:center;
+}
+
+.footer span{
+    color:#800020;
+}
+
+/* RESPONSIVE */
+@media(max-width:1023px){
+    header{padding:10px 20px;}
+    section{padding:80px 20px;}
+    .main-content{
+        flex-direction:column;
+        text-align:center;
+    }
+    .main-content img{
+        margin-top:30px;
+        width:200px;
+    }
+}
+</style>
+</head>
+
+<body>
+
+<header>
+    <a href="#" class="logo">Shahd Hamada</a>
+    <nav class="navigation">
+        <a href="#about">About Me</a>
+        <a href="#services">Services</a>
+        <a href="#projects">Projects</a>
+        <a href="#contact">Contact</a>
+    </nav>
+</header>
+
+<section class="main">
+    <div class="main-content">
+        <div>
+            <h2>Hello, I'm Shahd  <br><span>Flutter Developer</span></h2>
+            <h3>I build clean, organized and impactful mobile applications</h3>
+            <a href="#projects" class="main-btn">View My Work</a>
+        </div>
+
+        <div>
+            <img src="c:\Users\Lenovo\OneDrive\Pictures\Saved Pictures\صورتي.jpg" alt="Shahd Hamada">
+        </div>
+    </div>
+</section>
+
+<section class="about-me" id="about">
+    <h2 class="title">About Me</h2>
+    <p>
+        I am a mid-level Flutter Developer working as a freelancer. I have a solid foundation in Dart and Object-Oriented Programming (OOP) and a strong understanding of Flutter basics and advanced concepts. I continuously learn and improve my skills through hands-on projects, focusing on creating impactful and user-friendly mobile applications.
+    </p>
+    <a href="#contact" class="main-btn">Contact Me</a>
+</section>
+
+<section class="cards" id="services">
+    <h2 class="title">Services</h2>
+    <div class="content">
+        <div class="card">
+            <div class="icon"><i class="fas fa-mobile-alt"></i></div>
+            <div class="info">
+                <h3>Flutter App Development</h3>
+                <p>Building responsive and interactive mobile applications using Flutter and Dart.</p>
+            </div>
+        </div>
+
+        <div class="card">
+            <div class="icon"><i class="fas fa-pencil-ruler"></i></div>
+            <div class="info">
+                <h3>UI Implementation</h3>
+                <p>Creating clean, structured and scalable Flutter interfaces.</p>
+            </div>
+        </div>
+
+        <div class="card">
+            <div class="icon"><i class="fas fa-code"></i></div>
+            <div class="info">
+                <h3>App Architecture</h3>
+                <p>Organizing navigation flow and improving code structure using OOP principles.</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="projects" id="projects">
+    <h2 class="title">Projects</h2>
+    <div class="content">
+
+        <div class="project-card">
+            <div class="project-image">
+                <img src="images/work1.jpg">
+            </div>
+            <div class="project-info">
+                <strong class="project-title">
+                    <span>Flutter Basic UI</span>
+                    <a href="#" class="more-details">More</a>
+                </strong>
+            </div>
+        </div>
+
+        <div class="project-card">
+            <div class="project-image">
+                <img src="images/work2.jpg">
+            </div>
+            <div class="project-info">
+                <strong class="project-title">
+                    <span>Flutter Navigation</span>
+                    <a href="#" class="more-details">More</a>
+                </strong>
+            </div>
+        </div>
+
+        <div class="project-card">
+            <div class="project-image">
+                <img src="images/work3.jpg">
+            </div>
+            <div class="project-info">
+                <strong class="project-title">
+                    <span>Flutter Scrolling UI</span>
+                    <a href="#" class="more-details">More</a>
+                </strong>
+            </div>
+        </div>
+
+    </div>
+</section>
+
+<section class="cards contact" id="contact">
+    <h2 class="title">Contact Me</h2>
+    <div class="content">
+
+        <div class="card">
+            <div class="icon"><i class="fab fa-whatsapp"></i></div>
+            <div class="info">
+                <h3>WhatsApp</h3>
+                <p><a href="https://wa.me/+201030338472" target="_blank">+20 1030338472</a></p>
+            </div>
+        </div>
+
+        <div class="card">
+            <div class="icon"><i class="fas fa-envelope"></i></div>
+            <div class="info">
+                <h3>Email</h3>
+                <p><a href="mailto:Shahdhamadajk21@gmail.com">Shahdhamadajk21@gmail.com</a></p>
+            </div>
+        </div>
+
+        <div class="card">
+            <div class="icon"><i class="fab fa-linkedin"></i></div>
+            <div class="info">
+                <h3>LinkedIn</h3>
+                <p><a href="https://www.linkedin.com/in/shahd-hamada-920246398" target="_blank">View My Profile</a></p>
+            </div>
+        </div>
+
+    </div>
+</section>
+
+<footer class="footer">
+    <p>© 2026 <span>Shahd Hamada</span> - All Rights Reserved</p>
+</footer>
+
+</body>
+</html>
